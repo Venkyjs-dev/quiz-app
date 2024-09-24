@@ -1,0 +1,88 @@
+.signup-bg {
+  background-color: #f2f2f2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.signup-wrapper {
+  background-color: #ffffff;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+form {
+  text-align: right;
+  margin: auto;
+  margin-left: 30%;
+}
+
+form div {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+form div label {
+  margin-right: 10px;
+  flex: 0 0 150px;
+  text-align: right;
+}
+
+form div input {
+  flex: 1; /* Input takes the remaining space */
+  padding: 8px; /* Add some padding for better appearance */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px; /* Rounded corners */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+form div input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+span {
+  margin: 50px;
+}
+
+button {
+  background-color: #a9bcff;
+  color: #474444;
+  border: none;
+  width: 274px;
+  height: 38px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.top-section {
+  display: flex;
+}
+
+.top-section :nth-child(1) {
+  width: 200px;
+  height: 38px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.top-section :nth-child(2) {
+  width: 200px;
+  height: 38px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
