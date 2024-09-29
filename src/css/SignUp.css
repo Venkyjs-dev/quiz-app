@@ -1,88 +1,118 @@
 .signup-bg {
-  background-color: #f2f2f2;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-}
-.signup-wrapper {
   background-color: #ffffff;
-  width: 90%;
+  width: 60vw;
+  margin: auto;
+  margin-top: 5%;
+  height: 60vh;
+  text-align: center;
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Centers child elements horizontally */
+  align-items: center; /* Centers child elements vertically */
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
-  font-weight: bold;
+  gap: 15%;
 }
 
-form {
-  text-align: right;
-  margin: auto;
-  margin-left: 30%;
-}
-
-form div {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
-
-form div label {
-  margin-right: 10px;
-  flex: 0 0 150px;
-  text-align: right;
-}
-
-form div input {
-  flex: 1; /* Input takes the remaining space */
-  padding: 8px; /* Add some padding for better appearance */
-  border: 1px solid #ccc; /* Border styling */
-  border-radius: 4px; /* Rounded corners */
-  transition: border-color 0.3s; /* Smooth transition for border color */
-}
-
-form div input:focus {
-  border-color: #007bff; /* Change border color on focus */
-  outline: none; /* Remove default outline */
-}
-
-span {
-  margin: 50px;
-}
-
-button {
-  background-color: #a9bcff;
-  color: #474444;
-  border: none;
-  width: 274px;
-  height: 38px;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.top-section {
-  display: flex;
-}
-
-.top-section :nth-child(1) {
-  width: 200px;
-  height: 38px;
-  border-radius: 8px;
-  background-color: #f2f2f2;
-  display: block;
-  text-align: center;
-  padding-top: 10px;
-}
-
-.top-section :nth-child(2) {
-  width: 200px;
-  height: 38px;
-  border-radius: 8px;
+.button-enable {
+  width: 217px;
+  height: 37px;
   background-color: #ffffff;
-  display: block;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
   text-align: center;
-  padding-top: 10px;
+  line-height: 37px;
+  transition: box-shadow 0.3s ease;
+}
+
+.button:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-disabled {
+  width: 217px;
+  height: 37px;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 16px;
+  text-align: center;
+  line-height: 37px;
+  cursor: not-allowed;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.form-container {
+  width: 100%; /* Take up the available space within the parent */
+  max-width: 400px; /* Limit the width for better appearance */
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center; /* Ensure labels align to the left */
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 4px;
+  margin-right: 100px;
+}
+
+label {
+  flex: 1;
+  text-align: right;
+  font-size: 16px;
+  color: #333;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-enable {
+  width: 217px;
+  height: 37px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-enable:hover {
+  background-color: #45a049;
+}
+
+.submit-disable {
+  width: 217px;
+  height: 37px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #cccccc; /* Grey background to indicate disabled state */
+  color: #666666; /* Lighter text color */
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed; /* Shows disabled cursor */
+  pointer-events: none; /* Disables all events (click, hover, etc.) */
 }
