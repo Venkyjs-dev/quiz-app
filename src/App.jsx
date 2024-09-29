@@ -1,10 +1,12 @@
 import "./App.css";
-import SignUp from "./pages/SignUp";
+import HomePage from "./pages/HomePage";
 
+// singup page done
+// currenlty working home page layout
 function App() {
   return (
     <div>
-      <SignUp />
+      <HomePage />
     </div>
   );
 }
